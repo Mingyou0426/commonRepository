@@ -1,0 +1,320 @@
+{"application": {
+  "elasticSearchUrl" : "http://localhost:8080/dms",
+  "minify": "false",
+  "debug": "true",
+  "cloud": "true",
+  "password": "secretpass",
+  "ocrserverport": "25438",
+  "url": "http://localhost:8080/dms",
+  "wsUrl": "http://localhost:8181/DMSWS",
+  "wsMobile": "http://localhost:8181/DMSWS",
+  "mobileUrl": "http://m.documenta.ro/login",
+  "lightUrl": "http://localhost:8282/dmslight",
+  "windows" : "true",
+  "maxOcrPages": "10",
+  "diacritics" : "true",
+  "centenar" : "false",
+  "serverName" : "Test local",
+  "use_sha256": "false"
+}, "log": {
+  "sql": "ERROR",
+  "file": "SQL,TRACE,ERROR",
+  "logFileLocation": "C:\\abc\\def\\log.log"
+}, "mail_qa": {
+  "auth": "true",
+  "server": "mail.infrabizz.ro",
+  "port": "25",
+  "from": "documenta@documenta.ro",
+  "username": "username",
+  "password": "password",
+  "outputDir": "D:/work_dir/"
+}, "mail_old": {
+  "auth"  : "true",
+  "server" : "smtp.office365.com",
+  "port": "587",
+  "from": "dms.ro@sodexo.com",
+  "username": "dms.ro@sodexo.com",
+  "password": "Novosdx3#",
+  "outputDir": "D:/work_dir/",
+  "numOfMailsPerRun": "1",
+  "numTries" : "5",
+  "ssl": "true"
+}, "mail3": {
+  "auth"  : "true",
+  "server" : "hosting.documenta-dms.com",
+  "port": "25",
+  "from": "noreply@documenta.ro",
+  "fromName": "noreply@documenta.ro",
+  "username": "noreply@documenta.ro",
+  "password": "YBGq3nKF",
+  "outputDir": "C:/DOCUMENTA/output_dir/",
+  "numOfMailsPerRun": "15",
+  "debug" : "true"
+}, "mail": {
+	"auth"  : "true",
+	"server" : "smtp.office365.com",
+	"port": "587",
+	"from": "dms.documenta@blackseaog.com",
+	"username": "dms.documenta@blackseaog.com",
+	"password": "Oiram_321",
+	"outputDir": "C:/DOCUMENTA_HOME/output_dir/",
+	"numOfMailsPerRun": "1",
+	"ssl":"true",
+	"debug":"true",
+	"starttls" : "true",
+	"starttlsRequired" : "false",
+	"numTries" : "10"
+}, "pool": {
+  "debug": "true",
+  "logSql": "true",
+  "minNoContext": "5",
+  "markAndSweep": "true",
+  "maxActive": "10",
+  "initialSize": "1",
+  "minIdle": "5",
+  "maxIdle": "10",
+  "maxWait": "30000",
+  "validationInterval": "30000",
+  "timeBetweenEvictionRun": "5000",
+  "removeAbandonedTimeout": "216000",
+  "minEvictableIdleTimeMillis": "600000",
+  "sessionExpireMinute": "100"
+}, "openOffice": {
+  "oooExeFolder": "C:\\Program Files (x86)\\OpenOffice 4\\program\\",
+  "port": "8100"
+}, "file_store": {
+  "root_dir": "C:/DOCUMENTA/root_dir/",
+  "work_dir": "C:/DOCUMENTA/work_dir/",
+  "cache_dir": "C:/DOCUMENTA/cache_dir/",
+  "output_dir": "C:/DOCUMENTA/output_dir/",
+  "xml_dir": "C:/DOCUMENTA/xml_dir/",
+  "byte_buffer": "16384",
+  "num_per_parcel": "250",
+  "size_per_parcel_in_mb": "50000",
+  "sharepoint_active": "false",
+  "sharepoint_url": "http://192.168.0.244:34968",
+  "sharepoint_user": "EASharepointUser",
+  "sharepoint_password" : "q73\\}ntT!`[a",
+  "ecs_s3_active": "false",
+  "ecs_s3_url" : "https://s3.ecs.ezipper.ro:443",
+  "ecs_s3_access_key" : "documenta_user",
+  "ecs_s3_secret_key" : "c7d+W1oAWHebE0IjFPilfv44WWl0DsnT+aCdE8Lc",
+  "ecs_s3_namespace" : "documenta1"
+}, "pserver": {
+  "start": "false"
+}, "facturi": {
+  "start": "false"
+}, "emailprocess": {
+  "start": "true"
+}, "calsync": {
+  "start": "false"
+}, "bocr": {
+  "start": "false"
+}, "bconvert": {
+  "start": "false"
+}, "pageCount": {
+  "start": "false"
+}, "reports": {
+  "start": "false"
+}, "dmsOcrTask": {
+  "start": "false"
+}, "smartScan": {
+  "start": "false",
+  "maxDpi" : "200"
+}, "fileScan": {
+  "start": "false",
+  "maxDpi" : "200"
+}, "smartRegister": {
+  "start": "false",
+  "maxDpi" : "300"
+}, "xmlreader": {
+  "start": "false",
+  "hostname": "10.20.23.15",
+  "port": "1414",
+  "channel": "SYSTEM.BKR.CONFIG",
+  "queueManager": "QMGR75",
+  "queue": "IF57_SAP2EA_CUSTOMERS"
+}, "xmlparser": {
+  "start": "false"
+}, "reconstituireContract": {
+  "start": "false"
+}, "invParser": {
+  "start": "false"
+}, "transmittal_job": {
+  "start": "false"
+}, "database": {
+  "url_ELE_SA_INFRA": "jdbc:oracle:thin:@91.121.145.33:1529:XE",
+  "url_electrica_prod": "jdbc:oracle:thin:@10.90.66.201:1521:XE",
+  "url_electrica_fu_infra": "jdbc:oracle:thin:@192.168.2.44:1521:XE",
+  "url_doar_baza": "jdbc:oracle:thin:@192.168.0.26:1521:XE",
+  "url_lykos": "jdbc:oracle:thin:@89.238.193.148:1521:XE",
+  "url_ceo_oltenia": "jdbc:oracle:thin:@192.168.0.37:1060:orcl",
+  
+  "url_tiriac": "jdbc:oracle:thin:@192.168.10.146:1521:XE",
+  "url_erste": "jdbc:oracle:thin:@10.35.50.1:1521:orcl",
+  "url_dev_ora": "jdbc:oracle:thin:@192.168.0.52:1521:orcl",
+  "url_PROD": "jdbc:oracle:thin:@main.documenta-dms.com:1521/prod",
+  "url_kober_prod": "jdbc:oracle:thin:@192.168.252.12:1521:orcl",
+  "url_kober_test": "jdbc:oracle:thin:@192.168.252.3:1521:orcl",
+  "url_balti": "jdbc:oracle:thin:@WIN-D3DNTTAB5TI:1521:xe",
+  "url_balti2": "jdbc:oracle:thin:@192.168.0.204:1521:XE",
+  "url_sql_server_bat": "jdbc:sqlserver://192.168.0.36:1433;databaseName=dms",
+  "url_sqlserver_marian": "jdbc:sqlserver://192.168.0.242;databaseName=dms",
+  "url_sqlsserver_dev": "jdbc:sqlserver://192.168.0.35;databaseName=dms",
+  "url_sqlserver_qa": "jdbc:sqlserver://192.168.0.36;databaseName=dms",
+  "url_sqlserver_rompetrol": "jdbc:sqlserver://192.168.0.244:1432;databaseName=dms",
+  "url_sqls_209": "jdbc:sqlserver://192.168.0.209:1433;databaseName=dms",
+  "url_qa2": "jdbc:oracle:thin:@qa2.documenta.ro:1521:orcl",
+  "url_sodexo": "jdbc:oracle:thin:@10.40.2.86:1521:orcl",
+  "url_sodexo2" : "jdbc:oracle:thin:@documenta.aomn.acropo.gov.ro:1521:XE",
+  "url_bsog_infra": "jdbc:oracle:thin:@91.121.145.33:1526:XE",
+  "url_ceo_vpn": "jdbc:oracle:thin:@192.168.168.90:1521:orcl",
+  "url_ceo_direct": "jdbc:oracle:thin:@192.168.0.37:1060:orcl",
+  "url_bsog_test": "jdbc:oracle:thin:@172.16.8.44:1521:XE",
+  "url_bsog_prod": "jdbc:oracle:thin:@172.16.8.45:1521:XE",  
+  "url_kober?" : "jdbc:oracle:thin:@10.100.1.125:1521:dms",
+  "url_elis_pavaje" : "jdbc:oracle:thin:@192.168.252.22:1521:XE",
+  "url_kober_nou" : "jdbc:oracle:thin:@188.212.138.244:1522:XE",
+  "url_bolintin" : "jdbc:oracle:thin:@188.212.138.244:1522:XE",
+  "url_electrica_test": "jdbc:oracle:thin:@10.90.66.203:1521:XE",
+  "url_electroprecizia" : "jdbc:oracle:thin:@192.168.4.63:1521:XE",
+  "url_electroprecizia2" : "jdbc:oracle:thin:@192.168.4.65:1521:orcl",
+  "url_cristim" : "jdbc:oracle:thin:@10.100.1.125:1521:dms",
+  "url_cristim_test" : "jdbc:oracle:thin:@10.100.1.122:1521:XE",
+  "url_mysql" : "jdbc:mysql://hosting.documenta-dms.com?allowMultiQueries=true",
+  "url_postgress_Deepak_old": "jdbc:postgresql://192.168.0.106:5432/dms",
+  "url_Charles_Piao": "jdbc:postgresql://89.37.121.131:54323/dms",
+  "user_mysql": "root_dmsdev",
+  "pass_mysql" : "sjqm2AH7",
+ 
+  "pass_altele": "dms",
+ 
+  "pass_prod": "prod",
+  "pass_tiriac": "t7qasi2",
+  "pass_bsogprod": "bsog2017dms2321",
+ 
+  "driver_sqls": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+  "driver_mysql" : "com.mysql.jdbc.Driver",
+ 
+  "type_sqls": "SQL_SERVER",
+  "type_mysql" : "MYSQL",
+  
+    
+	"url": "jdbc:postgresql://89.37.121.131:54323/dms",
+    "user": "dms",
+    "pass": "dms2020",    
+    "driver": "org.postgresql.Driver",
+    "type": "POSTGRES"
+
+}, "timer_flux": {
+  "refreshInterval": "600000"
+}, "alertaTicheteExpirare": {
+   "start": "false",
+   "num_zile" : "5"
+}, "alertaTipDocExpirare": {
+   "start": "true",
+   "cod_doc" : "CONTRACT_FURNIZOR",
+   "attr_data_expirare" : "DATA_EXP",
+   "attr_user_responsabil" : "RESPONSABIL",
+   "id_unitate" : "1721",
+   "num_zile" : "35"
+}, "ldap": {
+  "active" : "false",
+  "enforce" : "false",
+  "host" : "192.168.0.36",
+  "port" : "389",
+  "ssl" : "false",
+  "userDnTemplate" : "{0}",
+  "userSearchTemplate" : "CN=Users,DC=win2012,DC=documenta,DC=ro",
+  "userMustBeInGroup": "DMS",
+  "checkGroupMembership" : "false",
+  "usernameSufix" : "win2012.documenta.ro",
+  "unitID": "148",
+  "syncUserAndGroups": "false",
+  "usernamePrefix" : ""
+}, "ldap2": {
+  "active" : "false",
+  "enforce" : "false",
+  "host" : "192.168.0.36",
+  "port" : "389",
+  "ssl" : "false",
+  "userDnTemplate" : "{0}",
+  "userSearchTemplate" : "CN=Users,DC=infrasoft,DC=local",
+  "userMustBeInGroup": "DMS",
+  "checkGroupMembership" : "true",
+  "usernameSufix" : "infrasoft.local",
+  "unitID": "148",
+  "syncUserAndGroups": "false",
+  "usernamePrefix" : ""
+}, "ldap_1": {
+  "active" : "false",
+  "enforce" : "false",
+  "host" : "192.168.168.2",
+  "port" : "389",
+  "ssl" : "false",
+  "userDnTemplate" : "{0}",
+  "userSearchTemplate" : "DC=ceoltenia,DC=int",
+  "userMustBeInGroup": "Documenta",
+  "checkGroupMembership" : "true",
+  "usernameSufix" : "",
+  "usernamePrefix":"CEOltenia\\",
+  "unitID": "1541",
+  "syncUserAndGroups": "false"
+}, "ldap_s": {
+  "active" : "false",
+  "enforce" : "false",
+  "host" : "192.168.0.36",
+  "port" : "389",
+  "ssl" : "false",
+  "userDnTemplate" : "{0}",
+  "userSearchTemplate" : "CN=Users,DC=infrasoft,DC=local",
+  "userMustBeInGroup": "DMS",
+  "checkGroupMembership" : "true",
+  "usernameSufix" : "infrasoft.local",
+  "unitID": "1501",
+  "syncUserAndGroups": "false",
+  "usernamePrefix" : ""
+}, "ldap_sodexo": {
+  "active" : "true",
+  "enforce" : "false",
+  "host" : "10.155.36.33",
+  "port" : "389",
+  "ssl" : "false",
+  "userDnTemplate" : "{0}",
+  "userSearchTemplate" : "OU=ROMANIA,OU=SVC,DC=ce,DC=sdxcorp,DC=net",
+  "userMustBeInGroup": "SG.CE.RO.SVC-DMS",
+  "checkGroupMembership" : "true",
+  "usernameSufix" : "sodexo.com",
+  "usernamePrefix":"",
+  "unitID": "1541",
+  "syncUserAndGroups": "true"
+}, "soapMessaging": {
+  "unit_id" : "1681",
+  "user_id" : "20112",
+  "register_id" : "3382",
+  "dir_id": ""
+}, "edi": {
+  "start" : "false",
+  "workers" : "5",
+  "listen_folder" : "G:\\EDI",
+  "scanMilis" : "60000"
+}, "dir_uploader": {
+  "max_workers" : "5",
+  "process_xml" : "true",
+  "input_dir_1" : "C:\\Users\\Infrasoft007\\Desktop\\dltest3",
+  "output_dir_1" : "165853",
+  "zinput_dir_2" : "D:\\tomcat6",
+  "zoutput_dir_2" : "164677"
+}, "dir_downloader": {
+  "max_workers" : "5",
+  "sql_1" : "select f.id, f.id_unitate, f.parcel, f.versiune, f.nume, dms_get_fast_serverpath(f.id) path, f.id_document, d.cod cod_document, d.denumire nume_document from fisiere f left join document d on f.id_document = d.id where (trunc(sysdate) = trunc(f.creat_la) or trunc(sysdate) = trunc(f.modificat_la))",
+  "output_dir_1" : "C:\\Users\\Infrasoft007\\Desktop\\dltest3"
+}, "archibus": {
+	"id_unitate": "901",  
+	"url": "jdbc:sqlserver://TH-Bud-SVT-ARCB;databaseName=ArchExpToDoc",	
+	"user": "documenta",        
+	"pass": "documenta",
+	"driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver",	
+	"type": "SQL_SERVER",
+	"schema_name": "archibus"
+}}
